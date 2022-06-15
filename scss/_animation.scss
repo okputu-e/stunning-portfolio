@@ -1,0 +1,16 @@
+//animte wrapper
+.slideUp {
+  position: relative;
+  animation: slideUp 1s;
+}
+
+@keyframes slideUp {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}

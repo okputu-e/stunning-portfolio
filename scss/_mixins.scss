@@ -1,0 +1,23 @@
+$up: (
+  "small": 425px,
+  "medium": 768px,
+  "large": 1200px,
+);
+
+$down: (
+  "small": 424px,
+  "medium": 767px,
+  "large": 1199px,
+);
+
+@mixin up($size) {
+  @media (min-width: map-get($up, $size)) {
+    @content;
+  }
+}
+
+@mixin down($size) {
+  @media (max-width: map-get($down, $size )) {
+    @content;
+  }
+}

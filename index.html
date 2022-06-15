@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="public/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/main.css" />
+    <title>Okputu | Portfolio</title>
+  </head>
+  <body onload="preLoad()">
+    <!--Preload start here-->
+    <div class="loader flex flex-jcc flex-aic">
+      <div class="loading">
+        <span>loading...</span>
+      </div>
+    </div>
+    <div class="wrapper grid slideUp">
+      <!--header start-->
+      <header id="header" class="header">
+        <nav class="nav flex flex-jcsb flex-aic">
+          <div class="nav__brand">
+            <ul>
+              <li><a href="index.html">O.E</a></li>
+            </ul>
+          </div>
+          <ul class="nav__bar flex" id="nav_bar">
+            <li><a href="#about" class="link active">About</a></li>
+
+            <li><a href="#skills" class="link">Skills</a></li>
+
+            <li><a href="#projects" class="link">Projects</a></li>
+
+            <li><a href="#contact" class="link">Contact</a></li>
+          </ul>
+          <div class="nav__harm flex flex-jcc flex-aic" id="harm">
+            <div class="toggle"></div>
+            <div class="overlay">
+              <ul class="mobile_nav">
+                <li><a href="#about" class="link">About</a></li>
+
+                <li><a href="#skills" class="link">Skills</a></li>
+
+                <li><a href="#projects" class="link">Projects</a></li>
+
+                <li><a href="#contact" class="link">Contact</a></li>
+              </ul>
+              <div class="mobile_social">
+                <h3 class="flex-tac">Lets Work together</h3>
+                <ul class="flex flex-jcse">
+                  <li>
+                    <a
+                      href="https://twitter.com/immanuelredd"
+                      id="profile-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/immanuelredd"
+                      id="profile-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://codepen.io/Malcolmred/pens/"
+                      id="profile-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-codepen"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--header end-->
+
+      <!--main start-->
+      <main id="main" class="main flex flex-jcc flex-aic flex-tac">
+        <section id="welcome-section" class="container">
+          <div class="text">
+            <img src="public/images/redd.png" alt="redd" class="image" />
+            <h1>
+              Hey, I'm
+              <span>Okputu.</span>
+            </h1>
+            <p>A Software Developer</p>
+            <a class="btn" href="#contact">contact me</a>
+          </div>
+        </section>
+      </main>
+      <!--main end-->
+
+      <!--about start-->
+      <section id="about" class="about flex flex-jcc flex-aic flex-tac">
+        <div class="container">
+          <div class="title">
+            <h2>About</h2>
+            <hr />
+          </div>
+          <div class="text">
+            <p>
+              My full name is
+              <span class="name">Okputu, Okputu Emmanuel.</span> I am a
+              christian from Nigeria and I hold a B.A in Economics. In my spare
+              time, I indulge in sports activities like dancing and exercising.
+              <br />
+              I am passionate about web development and I look forward to
+              working with passionate individuals. Currently, I work as a
+              Software developer for
+              <a target="_blank" class="link" href="https://activecodehub.com/"
+                >Active Code Business Hub
+              </a>
+            </p>
+          </div>
+
+          <a
+            class="btn"
+            href="https://drive.google.com/file/d/13Bds1egnVo4VZmdbM2qMuKBo4ArCnhRz/view?usp=sharing"
+            target="_blank"
+            >Download CV</a
+          >
+        </div>
+      </section>
+      <!--about end-->
+
+      <!--skills start-->
+      <section id="skills" class="skills flex flex-jcc flex-aic flex-tac">
+        <div class="container">
+          <div class="title">
+            <h2>Skills</h2>
+            <hr />
+          </div>
+          <div class="row grid">
+            <div>
+              <i class="fab fa-html5"><span>html</span></i>
+            </div>
+            <div>
+              <i class="fab fa-css3-alt"><span>Css</span></i>
+            </div>
+            <div>
+              <i class="fab fa-sass"><span>Sass</span></i>
+            </div>
+
+            <div>
+              <i class="fab fa-js-square"><span>js</span></i>
+            </div>
+            <div>
+              <i class="fab fa-php"><span>Php</span></i>
+            </div>
+            <div>
+              <i class="fab fa-git-alt"><span>git</span></i>
+            </div>
+            <div>
+              <i class="fab fa-wordpress"><span>Wordpress</span></i>
+            </div>
+            <div>
+              <i class="fab fa-bootstrap"><span>Bootstrap</span></i>
+            </div>
+            <div>
+              <i class="fab fa-cpanel"> <span>Cpanel</span></i>
+            </div>
+            <div>
+              <i class="fab fa-vuejs"> <span>Vuejs</span></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--skills end-->
+
+      <!--project start-->
+      <section id="projects" class="projects flex flex-jcc flex-aic flex-tac">
+        <div class="container">
+          <div class="title">
+            <h2>Projects</h2>
+            <hr />
+          </div>
+          <div class="project-tile grid">
+            <div class="card">
+              <div class="contain">
+                <div class="card_title">
+                  <h4><b>Simple Form</b></h4>
+                  <small>Html + Css</small>
+                </div>
+                <div class="card_text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi, autem?
+                  </p>
+                </div>
+                <div class="card_icon flex flex-jcsb">
+                  <a href=""><i class="fas fa-code"></i></a>
+                  <a
+                    target="_blank"
+                    href="https://immanuelredd.github.io/basic_form/"
+                    ><i class="far fa-eye"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="contain">
+                <div class="card_title">
+                  <h4><b>Testimonial Slider</b></h4>
+                  <small>Html + Css + Js</small>
+                </div>
+                <div class="card_text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi, autem?
+                  </p>
+                </div>
+                <div class="card_icon flex flex-jcsb">
+                  <a href=""><i class="fas fa-code"></i></a>
+                  <a
+                    target="_blank"
+                    href="https://testimonial-slider-jfvpk2rlp.vercel.app/"
+                    ><i class="far fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="contain">
+                <div class="card_title">
+                  <h4><b>Todo App</b></h4>
+                  <small>Html + Scss + Js</small>
+                </div>
+                <div class="card_text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi, autem?
+                  </p>
+                </div>
+                <div class="card_icon flex flex-jcsb">
+                  <a href=""><i class="fas fa-code"></i></a>
+                  <a
+                    target="_blank"
+                    href="https://immanuelredd.github.io/todoapp.github.io/"
+                    ><i class="far fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="last">
+              <div class="contain">
+                <div class="card_title">
+                  <h4><b>Portfolio & Blog</b></h4>
+                  <small>Scss + Php + Sql</small>
+                </div>
+                <div class="card_text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi, autem?
+                  </p>
+                </div>
+                <div class="card_icon flex flex-jcsb">
+                  <a href=""><i class="fas fa-code"></i></a>
+                  <a
+                    target="_blank"
+                    href="https://kelvinakparanta.com/index.php"
+                  >
+                    <i class="far fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn" href="#projects" id="more">More</a>
+        </div>
+      </section>
+      <!--project end-->
+
+      <!--Contact start-->
+      <section id="contact" class="contact flex flex-aic flex-jcc">
+        <div class="container">
+          <div class="title">
+            <h2>Contact</h2>
+          </div>
+          <form action="" id="form" class="form grid">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject" />
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"></textarea>
+
+            <a name="send" type="submit" class="btn">Send</a>
+          </form>
+        </div>
+      </section>
+      <!--contact End-->
+
+      <!--footer start-->
+      <footer id="footer" class="footer flex flex-jcc flex-tac flex-aic">
+        <div class="container">
+          <h2>Let's work together...</h2>
+
+          <ul class="footer-item flex flex-jcc">
+            <li>
+              <a
+                href="https://twitter.com/immanuelredd"
+                id="profile-link"
+                target="_blank"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/immanuelredd"
+                id="profile-link"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/Malcolmred/pens/"
+                id="profile-link"
+                target="_blank"
+              >
+                <i class="fab fa-codepen"></i>
+              </a>
+            </li>
+          </ul>
+
+          <hr id="line" />
+
+          <small class="copyright">&copy; Copyright Okputu Elementz</small>
+        </div>
+      </footer>
+      <!--footer end-->
+    </div>
+    <script src="public/js/main.js"></script>
+  </body>
+</html>
