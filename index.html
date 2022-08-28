@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="public/font-awesome/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="public/css/main.css" />
+    <link href="client/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="client/css/main.css" />
     <title>Okputu | Portfolio</title>
   </head>
-  <body onload="preLoad()">
+  <body>
     <!--Preload start here-->
-    <div class="loader flex flex-jcc flex-aic">
+    <!-- <div class="loader flex flex-jcc flex-aic">
       <div class="loading">
         <span>loading...</span>
       </div>
-    </div>
+    </div> -->
     <div class="wrapper grid slideUp">
       <!--header start-->
       <header id="header" class="header">
@@ -86,7 +86,7 @@
       <main id="main" class="main flex flex-jcc flex-aic flex-tac">
         <section id="welcome-section" class="container">
           <div class="text">
-            <img src="public/images/redd.png" alt="redd" class="image" />
+            <img src="client/images/redd.png" alt="redd" class="image" />
             <h1>
               Hey, I'm
               <span>Okputu.</span>
@@ -113,20 +113,16 @@
               time, I indulge in sports activities like dancing and exercising.
               <br />
               I am passionate about web development and I look forward to
-              working with passionate individuals. Currently, I work as a
-              Software developer for
-              <a target="_blank" class="link" href="https://activecodehub.com/"
-                >Active Code Business Hub
-              </a>
+              working with passionate individuals.
             </p>
           </div>
 
-          <a
+          <!-- <a
             class="btn"
             href="https://drive.google.com/file/d/13Bds1egnVo4VZmdbM2qMuKBo4ArCnhRz/view?usp=sharing"
             target="_blank"
             >Download CV</a
-          >
+          > -->
         </div>
       </section>
       <!--about end-->
@@ -148,7 +144,6 @@
             <div>
               <i class="fab fa-sass"><span>Sass</span></i>
             </div>
-
             <div>
               <i class="fab fa-js-square"><span>js</span></i>
             </div>
@@ -168,7 +163,10 @@
               <i class="fab fa-cpanel"> <span>Cpanel</span></i>
             </div>
             <div>
-              <i class="fab fa-vuejs"> <span>Vuejs</span></i>
+              <i class="fab fa-react"> <span>React</span></i>
+            </div>
+            <div>
+              <i class="fas fa-database"><span>Mysql</span></i>
             </div>
           </div>
         </div>
@@ -186,20 +184,15 @@
             <div class="card">
               <div class="contain">
                 <div class="card_title">
-                  <h4><b>Simple Form</b></h4>
-                  <small>Html + Css</small>
+                  <h4><b>Drummer Machine</b></h4>
+                  <small>React + JS</small>
                 </div>
-                <div class="card_text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi, autem?
-                  </p>
-                </div>
+                
                 <div class="card_icon flex flex-jcsb">
-                  <a href=""><i class="fas fa-code"></i></a>
+                  <a href="https://github.com/okputu-e/drum-machine"><i class="fas fa-code"></i></a>
                   <a
                     target="_blank"
-                    href="https://immanuelredd.github.io/basic_form/"
+                    href="https://okputu-e.github.io/drum-machine/"
                     ><i class="far fa-eye"> </i>
                   </a>
                 </div>
@@ -209,20 +202,15 @@
             <div class="card">
               <div class="contain">
                 <div class="card_title">
-                  <h4><b>Testimonial Slider</b></h4>
-                  <small>Html + Css + Js</small>
+                  <h4><b>MedicLab</b></h4>
+                  <small>Html + Css + Bootstrap</small>
                 </div>
-                <div class="card_text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi, autem?
-                  </p>
-                </div>
+                
                 <div class="card_icon flex flex-jcsb">
-                  <a href=""><i class="fas fa-code"></i></a>
+                  <a href="https://github.com/okputu-e/medicLab"><i class="fas fa-code"></i></a>
                   <a
                     target="_blank"
-                    href="https://testimonial-slider-jfvpk2rlp.vercel.app/"
+                    href="https://okputu-e.github.io/medicLab/"
                     ><i class="far fa-eye"></i>
                   </a>
                 </div>
@@ -232,51 +220,76 @@
             <div class="card">
               <div class="contain">
                 <div class="card_title">
-                  <h4><b>Todo App</b></h4>
+                  <h4><b>Simple Todo App</b></h4>
                   <small>Html + Scss + Js</small>
                 </div>
-                <div class="card_text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi, autem?
-                  </p>
-                </div>
+               
                 <div class="card_icon flex flex-jcsb">
-                  <a href=""><i class="fas fa-code"></i></a>
+                  <a href="https://github.com/okputu-e/simple-js-todo"><i class="fas fa-code"></i></a>
                   <a
                     target="_blank"
-                    href="https://immanuelredd.github.io/todoapp.github.io/"
+                    href="https://okputu-e.github.io/simple-js-todo/"
+                    ><i class="far fa-eye"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="contain">
+                <div class="card_title">
+                  <h4><b>Simple Form with Validation</b></h4>
+                  <small>Html + Css + Js</small>
+                </div>
+                
+                <div class="card_icon flex flex-jcsb">
+                  <a href="https://github.com/okputu-e/responsive-nav"><i class="fas fa-code"></i></a>
+                  <a
+                    target="_blank"
+                    href="https://okputu-e.github.io/responsive-nav/"
+                    ><i class="far fa-eye"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="contain">
+                <div class="card_title">
+                  <h4><b>Classic Resume</b></h4>
+                  <small>Html + Css</small>
+                </div>
+                
+                <div class="card_icon flex flex-jcsb">
+                  <a href="https://github.com/okputu-e/classic-resume"><i class="fas fa-code"></i></a>
+                  <a
+                    target="_blank"
+                    href="https://okputu-e.github.io/classic-resume/"
                     ><i class="far fa-eye"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="card" id="last">
+            <div class="card">
               <div class="contain">
                 <div class="card_title">
-                  <h4><b>Portfolio & Blog</b></h4>
-                  <small>Scss + Php + Sql</small>
+                  <h4><b>Simple Todo App</b></h4>
+                  <small>Html + Scss + Js</small>
                 </div>
-                <div class="card_text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi, autem?
-                  </p>
-                </div>
+               
                 <div class="card_icon flex flex-jcsb">
-                  <a href=""><i class="fas fa-code"></i></a>
+                  <a href="https://github.com/okputu-e/simple-js-todo"><i class="fas fa-code"></i></a>
                   <a
                     target="_blank"
-                    href="https://kelvinakparanta.com/index.php"
-                  >
-                    <i class="far fa-eye"></i>
+                    href="https://okputu-e.github.io/simple-js-todo/"
+                    ><i class="far fa-eye"> </i>
                   </a>
                 </div>
               </div>
             </div>
+
           </div>
-          <a class="btn" href="#projects" id="more">More</a>
         </div>
       </section>
       <!--project end-->
@@ -311,7 +324,7 @@
           <ul class="footer-item flex flex-jcc">
             <li>
               <a
-                href="https://twitter.com/immanuelredd"
+                href="https://twitter.com/okputu_e"
                 id="profile-link"
                 target="_blank"
               >
@@ -320,7 +333,7 @@
             </li>
             <li>
               <a
-                href="https://github.com/immanuelredd"
+                href="https://github.com/okputu-e"
                 id="profile-link"
                 target="_blank"
               >
@@ -345,6 +358,6 @@
       </footer>
       <!--footer end-->
     </div>
-    <script src="public/js/main.js"></script>
+    <script src="client/js/main.js"></script>
   </body>
 </html>

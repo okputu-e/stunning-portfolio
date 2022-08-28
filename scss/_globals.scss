@@ -72,69 +72,69 @@ body {
 .noscroll {
   overflow: hidden;
 }
-.loader {
-  height: 100vh;
-  width: 100%;
-  background: $tertiary;
-  color: $secondary;
-  text-transform: capitalize;
-  z-index: 700;
-  overflow: hidden;
+// .loader {
+//   height: 100vh;
+//   width: 100%;
+//   background: $tertiary;
+//   color: $secondary;
+//   text-transform: capitalize;
+//   z-index: 700;
+//   overflow: hidden;
 
-  .loading {
-    height: 200px;
-    width: 200px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    border-top: 10px solid $black;
-    position: relative;
-    animation: rotate 2s linear infinite;
+//   .loading {
+//     height: 200px;
+//     width: 200px;
+//     box-sizing: border-box;
+//     border-radius: 50%;
+//     border-top: 10px solid $black;
+//     position: relative;
+//     animation: rotate 2s linear infinite;
 
-    span {
-      position: absolute;
-      height: 200px;
-      width: 200px;
-      text-align: center;
-      line-height: 200px;
-      animation: irotate 2s linear infinite;
-    }
+//     span {
+//       position: absolute;
+//       height: 200px;
+//       width: 200px;
+//       text-align: center;
+//       line-height: 200px;
+//       animation: irotate 2s linear infinite;
+//     }
 
-    &::before,
-    &::after {
-      content: "";
-      height: 200px;
-      width: 200px;
-      position: absolute;
-      left: 0;
-      top: -10px;
-      box-sizing: border-box;
-      border-radius: 50%;
-    }
+//     &::before,
+//     &::after {
+//       content: "";
+//       height: 200px;
+//       width: 200px;
+//       position: absolute;
+//       left: 0;
+//       top: -10px;
+//       box-sizing: border-box;
+//       border-radius: 50%;
+//     }
 
-    &::before {
-      border-top: 10px solid $hover;
-      transform: rotate(120deg);
-    }
-    &::after {
-      border-top: 10px solid $grey;
-      transform: rotate(-120deg);
-    }
-  }
+//     &::before {
+//       border-top: 10px solid $hover;
+//       transform: rotate(120deg);
+//     }
+//     &::after {
+//       border-top: 10px solid $grey;
+//       transform: rotate(-120deg);
+//     }
+//   }
 
-  @keyframes rotate {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes irotate {
-    to {
-      transform: rotate(-360deg);
-      color: $hover;
-    }
-  }
-}
+//   @keyframes rotate {
+//     to {
+//       transform: rotate(360deg);
+//     }
+//   }
+//   @keyframes irotate {
+//     to {
+//       transform: rotate(-360deg);
+//       color: $hover;
+//     }
+//   }
+// }
 .wrapper {
-  display: none;
+  //display: none;
   height: 100%;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -178,9 +178,6 @@ body {
   .projects,
   .contact {
     height: 100%;
-    @include up(large) {
-      height: 100vh;
-    }
     .container {
       width: 95%;
       padding: 1rem;
@@ -456,7 +453,6 @@ main {
   }
 }
 .projects {
-  padding-bottom: 3rem;
   .container {
     position: relative;
     .project-tile {
@@ -473,6 +469,7 @@ main {
         border-radius: 0 1rem 0 1rem;
         &:hover {
           transition: all 1s ease-in-out;
+          background-color: $grey;
           border-radius: 0;
         }
         &:last-child {
@@ -480,26 +477,18 @@ main {
         }
 
         .contain {
-          width: 95%;
+          width: 90%;
           padding: 1rem;
           margin: auto;
         }
 
         .card_title {
-          margin: 0 0 0.5rem;
+          margin: 0 0 2rem;
           h4 {
             margin-bottom: 0.5rem;
           }
           small {
-            color: gray;
-          }
-        }
-
-        .card_text {
-          margin: 2rem auto;
-          color: gray;
-          p {
-            line-height: 1.5rem;
+            color: inherit;
           }
         }
 
@@ -531,25 +520,15 @@ main {
         grid-template-columns: 1fr;
       }
     }
-
-    a.btn {
-      display: inline-block;
-
-      @include up(large) {
-        position: absolute;
-        right: 4rem;
-      }
-    }
   }
 }
 .contact {
-  padding-top: 1rem;
   .container {
     .title {
       margin-bottom: 2rem;
     }
     .form {
-      width: 90%;
+      width: 95%;
       margin: auto;
 
       label {
