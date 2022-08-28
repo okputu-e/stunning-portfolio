@@ -535,7 +535,8 @@ main {
         margin-bottom: 0.5rem;
         font-size: 1.3rem;
       }
-      input[type="text"] {
+      input[type="text"],
+      input[type="email"] {
         width: 100%;
         padding: 0.5rem;
         outline: none;
@@ -554,10 +555,22 @@ main {
         border: none;
       }
 
-      .btn {
-        width: 5rem;
+      input.btn {
+        padding: 0.5rem 1rem;
         margin: 1rem auto;
+        background: none;
+        font-size: 1em;
+        text-transform: uppercase;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 0.5rem 1rem;
+        color: #f4f4f8;
         cursor: pointer;
+
+        &:hover {
+          background-color: $black;
+          color: $hover;
+          transition: all 1s ease-in-out;
+        }
       }
     }
   }
